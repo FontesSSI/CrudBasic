@@ -1,0 +1,155 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4caf50; /* Cor de fundo suave */
+    color: #333; /* Cor do texto principal */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #ff69b4; /* Cor rosa */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto branco */
+    background: linear-gradient(to bottom, #ff69b4, #4caf50); /* Gradiente de rosa para verde */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto branco */
+}
+
+
+/* Estilos para o formulário de cadastro de clientes */
+form {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Definir uma largura máxima */
+    margin: 0 auto; /* Centralizar o formulário */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: calc(100% - 22px); /* Subtrair a largura do padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Borda cinza */
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50; /* Cor verde */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para a lista de clientes */
+#clientes {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Definir uma largura máxima */
+    margin: 20px auto; /* Centralizar a lista */
+    list-style-type: none; /* Remover marcadores de lista */
+    text-align: center; /* Centralizar texto */
+}
+
+#clientes li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda cinza */
+    border-radius: 5px;
+}
+/* Gradiente para o cabeçalho */
+/* Estilos para a lista de clientes */
+#lista-clientes {
+    max-width: 500px; /* Definir uma largura máxima */
+    margin: 20px auto; /* Centralizar a lista */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#lista-clientes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cor do texto principal */
+}
+
+#lista-clientes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-clientes li {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#lista-clientes li span {
+    font-weight: bold;
+}
+
+#lista-clientes li span + span {
+    display: block;
+    margin-top: 5px;
+}
+
+  button{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .90s;
+    margin: 25px auto;
+  }
+  
+  button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff69b4;
+    transition: all .90s;
+}
+  
+  button:hover{
+    color: #fff;
+  }
+  
+  button:hover:after{
+    width: 100%;
+  }
