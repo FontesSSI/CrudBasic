@@ -21,5 +21,4 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 // Converter o array de clientes para formato JSON e retorná-lo
-echo json_encode($clientes);
-?>
+var_dump($clientes);
