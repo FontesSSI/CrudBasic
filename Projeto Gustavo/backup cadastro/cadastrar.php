@@ -1,5 +1,5 @@
 <?php
-include 'db_config.php';
+require_once 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
@@ -14,11 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $nome, $email, $telefone, $endereco, $nomedopet);
     if ($stmt->execute()) {
         echo "Cliente cadastrado com sucesso!";
+        echo "<scritton>alert('Cliente cadastrado com sucesso!');</script>";
     } else {
         echo "Erro ao cadastrar o cliente: " . $stmt->error;
+        echo "<scritton>alert('Cliente nao foi cadastrado: " . $stmt->error . "');</script>";
     }
 
     $stmt->close();
     $conn->close();
 }
-?>
